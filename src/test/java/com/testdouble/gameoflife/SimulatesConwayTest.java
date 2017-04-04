@@ -18,6 +18,9 @@ public class SimulatesConwayTest {
   private SeedWorld seedWorld;
 
   @Mock
+  private ReplaceWorld replaceWorld;
+
+  @Mock
   private DisplayWorld displayWorld;
 
   @Test
@@ -31,5 +34,21 @@ public class SimulatesConwayTest {
 
     // assert
     verify(displayWorld).display(seed);
+  }
+
+  @Test
+  public void generation1() {
+    // arrange
+    World seed = new World();
+    World next = new World();
+    when(seedWorld.seed()).thenReturn(seed);
+    when(replaceWorld.replace(seed)).thenReturn(next);
+
+    // act
+    simulator.simulate();
+
+    // assert
+    verify(displayWorld).display(seed);
+    verify(displayWorld).display(next);
   }
 }
