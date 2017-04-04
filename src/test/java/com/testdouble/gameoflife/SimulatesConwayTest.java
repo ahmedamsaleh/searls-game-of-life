@@ -12,13 +12,13 @@ import static org.mockito.Mockito.when;
 @RunWith(MockitoJUnitRunner.class)
 public class SimulatesConwayTest {
   @InjectMocks
-  ConwaySimulator simulator;
+  private ConwaySimulator simulator;
 
   @Mock
-  SeedWorld seedWorld;
+  private SeedWorld seedWorld;
 
   @Mock
-  DisplayWorld displayWorld;
+  private DisplayWorld displayWorld;
 
   @Test
   public void generation0() {
