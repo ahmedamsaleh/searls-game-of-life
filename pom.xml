@@ -7,8 +7,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>game-of-life</name>
-	<url>https://github.com/searls/game-of-life-java-example</url>
+	<name>searls-game-of-life</name>
+	<url>https://github.com/wpannell/searls-game-of-life</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
