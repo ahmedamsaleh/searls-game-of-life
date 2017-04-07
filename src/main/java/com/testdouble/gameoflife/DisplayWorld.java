@@ -1,6 +1,5 @@
 package com.testdouble.gameoflife;
 
 class DisplayWorld {
-  void display(World seed) {
-  }
+  void display(World seed) {}
 }
