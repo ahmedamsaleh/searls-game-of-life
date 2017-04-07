@@ -30,7 +30,7 @@ public class SimulatesConwayTest {
     when(seedWorld.seed()).thenReturn(seed);
 
     // act
-    simulator.simulate();
+    simulator.simulate(0);
 
     // assert
     verify(displayWorld).display(seed);
@@ -45,7 +45,7 @@ public class SimulatesConwayTest {
     when(replaceWorld.replace(seed)).thenReturn(next);
 
     // act
-    simulator.simulate();
+    simulator.simulate(1);
 
     // assert
     verify(displayWorld).display(seed);
