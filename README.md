@@ -26,3 +26,7 @@ $ mvn install
 
 * import as maven project
 
+## follow the instruction by [Justin Searls](https://www.youtube.com/watch?v=aeX5OXO-w30)
+
+* ensure you get the programming muscle memory by writing each line of code yourself
+
